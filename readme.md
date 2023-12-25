@@ -11,7 +11,7 @@ Welcome to my SQL practice repository! This repository contains my solutions to 
 ## Table of Contents
 - [Introduction](#introduction)
 - [Formulae](#formulae)
-    - [Find even/odd stuff](#find-evenodd-stuff)
+    - [Find even-odd stuff](#find-evenodd-stuff)
 - [Contributing](#contributing)
 
 
@@ -21,17 +21,15 @@ This repository serves as a collection of my SQL solutions and notes to help mys
 
 ## Formulae
 
-### 1. Find even/odd stuff
+### 1. Find even-odd stuff
 
 > Note: When asked to find even or odd number of something -  we should keep in mind that we have to use **MODULUS operator**. There are two ways to use it - 
-> - Use <code> WHERE (ID % 2) = 0 </code> </li>
-> - Use <code> WHERE MOD (ID,2) = 0 </code> </li>
+> - Use `WHERE (ID % 2) = 0`
+> - Use `WHERE MOD (ID,2) = 0`
 
     
    That **,2** indicates modulus 2 and the **0** is the remainder.
 
-
-</div>
 
 
 
