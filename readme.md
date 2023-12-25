@@ -4,11 +4,11 @@ Welcome to my SQL practice repository! This repository contains my solutions to 
 
 
 <!-- TOC -->
-## Table of Contents
 - [Introduction](#introduction)
 - [Functions](#functions)
-    - [Modulus](#modulus)
-        - [Finding even and odd items](#finding-even-and-odd-items)
+  * [1. Modulus](#1-modulus)
+    + [Finding even and odd items](#finding-even-and-odd-items)
+  * [2. Regular Expression](#2-regular-expression)
 - [Contributing](#contributing)
 <!-- /TOC -->
 
