@@ -55,6 +55,49 @@ SELECT column_name FROM table_name WHERE column_name RLIKE 'pattern';
 - **'^[^AEIOU]'**
     - ^ (the one at the beginning) -> same as example 1
     - [^AEIOU] -> Matches any character that is not one of the characters inside the square bracket
+#### [Example 5 ](Hackerrank/SQL-Basic/weather-observation-station-10.sql) : Finding names that do not end with vowels
+- **'[^AEIOU]$'**
+    - $ (the one at the beginning) -> same as example 2
+    - [^AEIOU] -> Matches any character that is not one of the characters inside the square bracket
+#### [Example 6 ](Hackerrank/SQL-Basic/weather-observation-station-11.sql) : Finding names that do not start OR end with vowels
+- **'^[^AEIOU]|[^AEIOU]$'**
+    - ^[^AEIOU] -> same as example 4
+    - | -> Logical OR operator
+    - [^AEIOU]$ -> same as exmple 5
+#### [Example 6 ](Hackerrank/SQL-Basic/weather-observation-station-12.sql) : Finding names that do not start AND end with vowels
+- **'^[^AEIOU].*[^AEIOU]$'**
+    - ^[^AEIOU] -> same as example 4
+    - .* -> Matches any character in between.
+    - [^AEIOU]$ -> same as exmple 5
+
+
+
+## Approach
+
+### 1. ORDER BY
+
+ - ORDER BY last 3 characters by each name. Additionally, if two or more people have names ending with same character - secondary sort by ID
+ ```sql
+ SELECT
+    NAME
+FROM
+    STUDENTS
+ORDER BY 
+    SUBSTRING(NAME,-3), ID;
+ ```
+
+ Here, -3 means counting from the end of the string. Here's another way to do it using RIGHT. RIGHT will extract characters from the right side.
+
+ ```sql
+ SELECT
+    NAME
+FROM
+    STUDENTS
+WHERE
+    MARKS > 75
+ORDER BY 
+    RIGHT(NAME,3), ID;
+ ```
 
 
 ## Contributing
