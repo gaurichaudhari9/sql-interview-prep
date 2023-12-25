@@ -38,11 +38,23 @@ This repository serves as a collection of my SQL solutions and notes to help mys
 SELECT column_name FROM table_name WHERE column_name RLIKE 'pattern';
 ```
 
+
+#### [Example 1 ](Hackerrank/SQL-Basic/weather-observation-station-6.sql) : Finding names starting with vowels
 - **'^[AEIOU]'**
     - ^ -> starting with
     - [AEIOU] -> Matches any character that is inside the square brackets/
-
-#### [Example 1 ](Hackerrank/SQL-Basic/weather-observation-station-6.sql)
+#### [Example 2 ](Hackerrank/SQL-Basic/weather-observation-station-7.sql) : Finding names ending with vowels
+- **'[AEIOU]$'**
+    - $ -> ends with
+#### [Example 3 ](Hackerrank/SQL-Basic/weather-observation-station-8.sql) : Finding names starting and ending with vowels
+- **'^[AEIOU].*[AEIOU]$'**
+    - ^[AEIOU] -> same as example 1
+    - .* -> Matches any (zero or more) characters after first and  before last
+    - [AEIOU]$ -> same as example 2
+#### [Example 4 ](Hackerrank/SQL-Basic/weather-observation-station-9.sql) : Finding names that do not start with vowels
+- **'^[^AEIOU]'**
+    - ^ (the one at the beginning) -> same as example 1
+    - [^AEIOU] -> Matches any character that is not one of the characters inside the square bracket
 
 
 ## Contributing
