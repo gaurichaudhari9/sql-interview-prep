@@ -1,34 +1,3 @@
-<style>
-    .note {
-        background-color: #eaf7ff;
-        border: 1px solid #007acc;
-        padding: 15px;
-        margin-bottom: 20px;
-        color: #007acc;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .note strong {
-        color: #004080;
-    }
-
-    .note::before {
-        content: "📝";
-        font-size: 30px;
-        margin-right: 10px;
-    }
-
-    .note ul {
-        margin-top: 10px;
-        margin-bottom: 0;
-        padding-left: 20px;
-    }
-
-    .note li {
-        margin-bottom: 5px;
-    }
-</style>
 
 
 
@@ -36,6 +5,8 @@
 # SQL Interview Prep!
 
 Welcome to my SQL practice repository! This repository contains my solutions to SQL questions from various platforms such as LeetCode, HackerRank, etc. It also includes detailed notes on how to approach these problems.
+
+
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -52,12 +23,10 @@ This repository serves as a collection of my SQL solutions and notes to help mys
 
 ### 1. Find even/odd stuff
 
-<div class="note">
-    <strong>Note:</strong> When asked to find even or odd number of something -  we should keep in mind that we have to use MODULUS operator. There are two ways to use it - 
-    <ul> 
-    <li> Use <code> WHERE (ID % 2) = 0 </code> </li>
-    <li> Use <code> WHERE MOD (ID,2) = 0 </code> </li>
-     </ul>
+> Note: When asked to find even or odd number of something -  we should keep in mind that we have to use **MODULUS operator**. There are two ways to use it - 
+> - Use <code> WHERE (ID % 2) = 0 </code> </li>
+> - Use <code> WHERE MOD (ID,2) = 0 </code> </li>
+
     
    That **,2** indicates modulus 2 and the **0** is the remainder.
 
