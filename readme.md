@@ -2,6 +2,7 @@
 
 Welcome to my SQL practice repository! This repository contains my solutions to SQL questions from various platforms such as LeetCode, HackerRank, etc. It also includes detailed notes on how to approach these problems.
 
+BETWEEN IS INCLUSIVE OG RANGES weather observation station 13
 
 <!-- TOC -->
 - [Introduction](#introduction)
